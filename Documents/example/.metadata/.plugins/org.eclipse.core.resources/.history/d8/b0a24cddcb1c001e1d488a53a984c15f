@@ -1,0 +1,32 @@
+
+public class Node {
+	int val;
+	LinkedList next;
+	Node(){}
+	Node(int n){
+		val = n;
+	}
+	
+	LinkedList head = null;
+	LinkedList tail = null;
+	
+	public void addNode(int val) {
+		LinkedList node = new LinkedList(val);
+		if(head==null) {
+			head = node;
+			tail = node;
+		}
+		else
+		{tail.next = node;
+		node.next = null;
+		tail = node;
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		LinkedList n = new LinkedList();
+		addNode(5);
+		
+	}
+}

@@ -1,0 +1,9 @@
+package com.vui.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.vui.modal.UserLlogin;
+
+public interface UserLoginRepository extends JpaRepository<UserLlogin, String> {
+
+}

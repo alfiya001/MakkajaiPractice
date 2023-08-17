@@ -1,0 +1,4 @@
+
+public class AddLinkedlist {
+	Node node = new Node();
+}

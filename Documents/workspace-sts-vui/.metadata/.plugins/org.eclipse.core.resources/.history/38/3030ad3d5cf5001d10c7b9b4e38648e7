@@ -1,0 +1,13 @@
+package com.vui;
+
+import java.time.LocalDate;
+import java.time.Month;
+
+public abstract class Test {
+	public static void main(String[] args) {
+//		LocalDate date = LocalDate.of(2019,Month.MARCH,30);
+		
+		System.out.println(LocalDate.ofYearDay(2020, 255));
+	}
+
+}
