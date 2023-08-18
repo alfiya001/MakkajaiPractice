@@ -1,0 +1,11 @@
+
+public class Factorial {
+	public static void main(String[] args) {
+		int i = 5;
+		factorial(i);
+	}
+	public static int factorial(int fact) {
+		if(fact==1) return 1;
+		return fact*factorial(fact-1);
+	}
+}

@@ -1,0 +1,4 @@
+
+public interface Sphere {
+	default void description() {}
+}

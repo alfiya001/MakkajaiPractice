@@ -1,0 +1,8 @@
+
+public class Node {
+	int val;
+	Node next;
+	Node(int n){
+		val = n;
+	}
+}

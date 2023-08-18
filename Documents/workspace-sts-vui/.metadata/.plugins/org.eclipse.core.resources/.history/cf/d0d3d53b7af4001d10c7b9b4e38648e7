@@ -1,0 +1,21 @@
+package com.vui;
+
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
+
+@SpringBootApplication
+public class VuiLiveApplication {
+	@Autowired
+    static ApplicationContext applicationContext;
+
+	public static void main(String[] args) {
+		System.out.println("test app");
+		System.out.println(Arrays.asList(applicationContext.getBeanDefinitionNames()));
+		SpringApplication.run(VuiLiveApplication.class, args);
+	}
+
+}

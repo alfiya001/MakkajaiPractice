@@ -1,0 +1,23 @@
+package com.vui.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.vui.modal.UserLogin;
+import com.vui.repository.UserLoginRepository;
+
+import lombok.RequiredArgsConstructor;
+
+@RestController
+@RequiredArgsConstructor
+public class RegistrationController {
+	
+	
+	private UserLoginRepository loginRepository;
+	
+	public ResponseEntity<?> register(@RequestBody UserLogin userLogin) {
+		UserLogin user = loginRepository.findByUsername(userLogin.getUsername());
+		return ResponseEntity.ok(user);
+	}
+}

@@ -1,0 +1,7 @@
+package com.vui.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestControllerpublic class AuthenticationController {
+
+}

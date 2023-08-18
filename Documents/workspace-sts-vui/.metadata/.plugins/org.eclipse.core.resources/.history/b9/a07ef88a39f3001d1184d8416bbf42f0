@@ -1,0 +1,9 @@
+package com.vui.service;
+
+
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+	public interface JwtUserDetailService extends UserDetailsService {
+
+	}
+
