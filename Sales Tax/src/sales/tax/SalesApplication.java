@@ -15,16 +15,15 @@ public class SalesApplication {
                 break;
             }
 
-            String[] itemDetails = itemInput.split(",");
-//            for(int i=0;i <itemDetails.length;i++)
-//            	System.out.println("details: " + itemDetails[i]);
+//            String[] itemDetails = itemInput.split(" ");
             
-                String name = itemDetails[1].trim();
-                double price = Double.parseDouble(itemDetails[2].trim());
-                boolean isImported = itemDetails[1].trim().toLowerCase().contains("imported");
+            int splitIndex = itemInput.lastIndexOf("at");
+                String name = itemInput.substring(1, splitIndex);
+                double price = Double.parseDouble(itemInput.substring(splitIndex + 2));
+                boolean isImported = itemInput.contains("imported");
                 Product product = new Product(name, price, isImported);
-                Item item = new Item(product, Integer.parseInt(itemDetails[0].trim()));
-//                System.out.println("details: " + name+"  " + price +"  " + isImported);
+                Item item = new Item(product, Integer.parseInt(itemInput.substring(0, 1)));
+                System.out.println("details: " + name+"  " + price +"  " + isImported);
 
                 receipt.addItem(item);
         }
