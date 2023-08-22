@@ -23,7 +23,7 @@ public class SalesApplication {
                 boolean isImported = itemInput.contains("imported");
                 Product product = new Product(name, price, isImported);
                 Item item = new Item(product, Integer.parseInt(itemInput.substring(0, 1)));
-                System.out.println("details: " + name+"  " + price +"  " + isImported);
+//                System.out.println("details: " + name+"  " + price +"  " + isImported);
 
                 receipt.addItem(item);
         }
