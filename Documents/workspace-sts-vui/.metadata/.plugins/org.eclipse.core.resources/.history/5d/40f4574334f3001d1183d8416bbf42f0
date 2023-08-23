@@ -1,5 +1,0 @@
-package com.vui.model;
-
-public class JwtResponse {
-
-}

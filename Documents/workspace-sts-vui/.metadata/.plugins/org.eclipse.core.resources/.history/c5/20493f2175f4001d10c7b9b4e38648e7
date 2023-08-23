@@ -1,9 +1,0 @@
-package com.vui.service;
-
-import org.springframework.security.authentication.AuthenticationProvider;
-import org.springframework.stereotype.Service;
-
-@Service
-public interface JwtAuthenticationProvider extends AuthenticationProvider  {
-
-}

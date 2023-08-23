@@ -1,7 +1,0 @@
-package com.vui.modal;
-
-public class UserLlogin {
-	private String username;
-	private String password;
-
-}

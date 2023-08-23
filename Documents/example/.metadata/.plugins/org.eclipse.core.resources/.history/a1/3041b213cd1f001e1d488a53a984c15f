@@ -1,5 +1,0 @@
-
-public interface Circle {
-	default void description() {}
-	int getRadius();
-}

@@ -1,4 +1,0 @@
-
-public interface Circle {
-	default void description() {}
-}

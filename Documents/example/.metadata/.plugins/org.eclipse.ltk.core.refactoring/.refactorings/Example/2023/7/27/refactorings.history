@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;Node&apos; to &apos;LinkedList&apos;&#x0D;&#x0A;- Original project: &apos;Example&apos;&#x0D;&#x0A;- Original element: &apos;Node&apos;&#x0D;&#x0A;- Renamed element: &apos;LinkedList&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Node&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Node.java[Node" matchStrategy="1" name="LinkedList" qualified="false" references="true" similarDeclarations="false" stamp="1688737241422" textual="false" version="1.0"/>
-</session>

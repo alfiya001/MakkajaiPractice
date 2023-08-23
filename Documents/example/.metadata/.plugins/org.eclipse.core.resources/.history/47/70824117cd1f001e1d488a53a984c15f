@@ -1,5 +1,0 @@
-
-public interface Sphere {
-	default void description() {}
-	int getRadius();
-}

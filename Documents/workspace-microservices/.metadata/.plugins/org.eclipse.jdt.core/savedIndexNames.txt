@@ -1,2 +1,0 @@
-INDEX VERSION 1.131+C:\Users\2106421\Documents\workspace-microservices\.metadata\.plugins\org.eclipse.jdt.core
-1871985630.index

@@ -1,9 +1,0 @@
-
-public class Node {
-	int val;
-	Node next;
-	Node(){}
-	Node(int n){
-		val = n;
-	}
-}
