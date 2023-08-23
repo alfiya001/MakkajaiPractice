@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Receipt {
 	private List<Item> items = new ArrayList<Item>();
-	private SalesTaxCalculator salesTaxCalculator = new SalesTaxCalculator();
+	private TaxRateCalculator taxRateCalculator = new TaxRateCalculator();
 	
 	public void addItem(Item item) {
 		items.add(item);
@@ -26,8 +26,8 @@ public class Receipt {
 			totalTax += item.product.calculateTax() * item.quantity;
 		}*/
         
-        System.out.println("Sales Taxes: " + String.format("%.2f", salesTaxCalculator.calculateTotalTax(items)));
-        System.out.println("Total: " + String.format("%.2f", salesTaxCalculator.calculateTotalPrice(items)));
+        System.out.println("Sales Taxes: " + String.format("%.2f", taxRateCalculator.calculateTotalTax(items)));
+        System.out.println("Total: " + String.format("%.2f", taxRateCalculator.calculateTotalPrice(items)));
 
 	}
 }

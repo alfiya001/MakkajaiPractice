@@ -1,6 +1,6 @@
 package sales.tax;
 
-public class Product implements TaxCalculation {
+public class Product {
 	private String name;
 	private double price;
 	private boolean isImported;
