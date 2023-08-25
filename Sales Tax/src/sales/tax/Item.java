@@ -26,10 +26,11 @@ public class Item {
 		this.quantity = quantity;
 	}
 
+	//Return total price of single item 
 	public double getTotalPrice() {
-        return product.getPrice() * quantity + product.calculateTax() * quantity;
-    }
-	
+		return (product.getPrice() + product.calculateTax()) * quantity;
+	}
+
 	@Override
 	public String toString() {
 		return quantity + " " + product.getName() + ": " + String.format("%.2f", getTotalPrice());
